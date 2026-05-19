@@ -19,10 +19,19 @@ class CertificateController extends Controller
         $path = storage_path('app/certificate.pdf');
 
         Browsershot::html($html)
+
+    ->setChromePath('/usr/bin/google-chrome')
+
+    ->noSandbox()
+
     ->showBackground()
+
     ->landscape()
+
     ->format('A4')
+
     ->margins(0,0,0,0)
+
     ->save($path);
 
         return response()->download($path);

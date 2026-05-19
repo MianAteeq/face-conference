@@ -233,7 +233,7 @@
 <div class="certificate-wrapper">
   <div class="border-inner">
 
-    <img class="top-left-logo" src="https://fissionmonster.com/certificate/Iadsrlogo.png" alt="IADSR Logo" />
+    <img class="top-left-logo" src="https://fissionmonster.com/certificate/iadsrlogo.png" alt="IADSR Logo" />
     <img class="top-right-logo" src="https://fissionmonster.com/certificate/Face logo.png" alt="Face Congress Logo" />
 
     <h1 class="title">Certificate</h1>
