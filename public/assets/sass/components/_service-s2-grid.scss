@@ -1,0 +1,49 @@
+/*** service style 2 gird ***/
+.services-s2-grids .grid {
+	background-color: $white;
+	text-align: center;
+
+	h3 {
+		display: inline-block;
+		font-size: 22px;
+		margin: 0 0 0.6em;
+		padding-bottom: 0.7em;
+		position: relative;
+
+		@include media-query(1199px) {
+			font-size: 18px;
+		}
+
+		@include media-query(767px) {
+			font-size: 16px;
+		}
+
+		&:after {
+			content: "";
+			background-color: $theme-secondary-color;
+			width: 30px;
+			height: 2px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			@include translatingX();
+			@include rounded-border(3px);
+		}
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.details {
+		padding: 25px 40px;
+
+		@include media-query(1199px) {
+			padding: 25px 30px;
+		}
+
+		@include media-query(767px) {
+			padding: 20px 15px;
+		}
+	}
+}

@@ -1,0 +1,82 @@
+/*** construction-services-grids ***/
+.construction-services-grids .grid {
+	
+	.img-holder:hover {
+		&:before {
+			@include scaleing(1,1);
+			opacity: 1;
+		}
+
+		a {
+			opacity: 1;
+		}
+	}
+
+	.img-holder {
+		position: relative;
+
+		&:before {
+			content: "";
+			opacity: 0;
+			@include overlay(transparentize($construction-primary-color, 0.1));
+			@include scaleing(0.3, 0.3);
+			@include transition-time(0.3s);
+		}
+
+		a {
+			width: 70px;
+			height: 70px;
+			line-height: 70px;
+			text-align: center;
+			border: 1px solid $white;
+			font-size: 25px;
+			color: $white;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			opacity: 0;
+			@include center-by-translating;
+			@include rounded-border();
+			@include transition-time(0.3s);
+
+			@include media-query(991px) {
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 15px;
+			}
+		}
+	}
+
+	.details {
+		padding: 30px 0;
+
+		h3  {
+			font-size: 22px;
+			margin: 0 0 0.73em;
+			text-transform: uppercase;
+
+			@include media-query(991px) {
+				font-size: 18px;
+			}
+
+			@include media-query(767px) {
+				font-size: 16px;
+			}
+		}
+
+		p {
+			margin: 0 0 1.87em;
+		}
+
+		.construction-theme-btn {
+			border-color: $construction-secondary-color;
+			color: $construction-secondary-color;
+
+			&:hover {
+				border-color: $construction-primary-color;
+				color: $white;
+			}
+		}
+	}
+}

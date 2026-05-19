@@ -1,0 +1,92 @@
+/*** team-architects ***/
+.team-architects {
+
+	.left-col {
+		text-align: center;
+
+		.img-holder {
+			position: relative;
+		}
+
+		.grid:hover .plus {
+			@include  scaleing(1, 1);
+			opacity: 1;
+		}
+
+		.grid:hover h3 {
+			color: $theme-primary-color3;
+		}
+
+		.plus {
+			@include overlay(transparentize($theme-primary-color3, 0.2));
+			@include  scaleing(0.7, 0.7);
+			@include transition-time(0.3s);
+			opacity: 0;
+
+			&:before,
+			&:after {
+				content: "";
+				background-color: $white;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				@include center-by-translating();
+				z-index: 10;
+			}
+
+			&:before {
+				width: 1px;
+				height: 55px;
+			}
+
+			&:after {
+				width: 55px;
+				height: 1px;
+			}
+		}	
+
+		.details {
+			padding: 40px 10px 30px;
+			@include round-box-shadow($box-shadow-color, 20px, 0);
+
+			@include media-query(767px) {
+				padding: 25px 10px 20px;
+			}
+		}	
+
+		h3 {
+			font-size: 17px;
+			margin: 0 0 0.65em;
+			text-transform: uppercase;
+
+			@include media-query(767px) {
+				font-size: 15px;
+			}
+		}
+
+		.social-links {
+			display: inline-block;
+
+			li {
+				font-size: 13px;
+				color: lighten($black, 50%);
+				margin-right: 25px;
+				
+				&:last-child {
+					margin-right: 0;
+				}
+
+				@include media-query(1199px) {
+					margin-right: 7px;
+				}
+
+				@include media-query(767px) {
+					font-size: 12px;
+					margin-right: 5px;
+				}
+			}
+		}
+
+
+	}
+}

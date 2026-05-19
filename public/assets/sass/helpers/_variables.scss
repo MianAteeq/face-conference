@@ -1,0 +1,118 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Montserrat:400,700');
+
+// fonts
+$lato: 'Lato', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+
+
+$basefont: $lato;
+$heading-font: $montserrat;
+$section-title-font: $montserrat;
+$navigation-font: $montserrat;
+$agency-some-specific-fonts: $montserrat;
+$seo-testimonial-quote-font: $montserrat;
+
+// color
+$tan: #264799;
+$blue: #081f65;
+$yellow: #fcce00;
+$dark-gray: #2a2a2a;
+$white: #fff;
+$black: #000;
+$light-gray: #f0f0f0;
+$light-gray2: #555;
+$light-black: #111;
+$box-shadow-color: #dbdbdb;
+$light-green: #01b169;
+$light-red: #d34f4f;
+$pink: #a94fbe;
+$powder-red: #e17152;
+$powder-blue: #5baadf;
+$powder-green: #5bdebd;
+$blue-2: #0a22ab;
+$dark-gray2: #666;
+$yellow-2: #ffb600;
+$medium-light-blue: #252536;
+$medium-red: #ec1c33;
+$yellow-3: #f39c12; 
+$pest-color: #29af8a;
+$light-blue2: #3498db;
+$red4: #205aa6;
+$powder-navy-blue: #4e5a76;
+$deep-blue: #071821;
+$sweet-nuts: #c8b370;
+$light-sweet-nuts: #ebe0b3;
+$dark-blue: #0e1e3a;
+$dark-blue-lighten: #537884;
+$sweet-blue: #4548b3;
+$lighten-gray: #fbf9fa;
+$blue3: #2447b9;
+$orange: #ff9c00;
+$deep-blue2: #1c2332;
+$light-pest: #eef3f6;
+$powder-green2: #01b169;
+$yellow-4: #f9c202;
+$powder-green3: #34c187;
+$powder-blue2: #0f9aee;
+$light-blue3: #ecf8ff;
+$powder-blue3: #d9e5ec;
+$deep-blue3: #023d61;
+$biolet: #67396e;
+$powder-pink: #e65360;
+
+
+
+$theme-primary-color: $tan;
+$theme-primary-color2: $blue;
+$theme-primary-color3: $blue-2;
+$construction-primary-color: $yellow-2;
+$construction-secondary-color: $medium-light-blue;
+$theme-secondary-color: $yellow;
+$body-bg-color: $white;
+$section-bg-color: $light-gray;
+$section-bg-color2: $light-pest;
+$text-color: $light-gray2;
+$heading-color: $light-black;
+$topbar-color: $light-black;
+$footer-color: $light-black;
+$css-progress-color: $pink;
+$photoshop-progress-color: $powder-red;
+$wordpress-progress-color: $powder-blue;
+$illustrator-progress-color: $powder-green;
+$footer-style-two-color: $dark-gray2;
+$charity-theme-color: $medium-red;
+$charity-secondary-color: $yellow-3;
+$charity-secondary2-color: $pest-color;
+$charity-secondary3-color: $light-blue2;
+$events-theme-color: $red4;
+$events-secondary-color: $powder-navy-blue;
+$events-transparent-color: $deep-blue;
+$agency-theme-color: $sweet-nuts;
+$agency-secondary-color: $light-sweet-nuts;
+$agency-funfact-bg: $dark-blue;
+$agency-funfact-bg2: $dark-blue-lighten;
+$app-landing-theme-color: $sweet-blue;
+$app-landing-showcase-bg: $lighten-gray;
+$app-landing-showcase-icon1: #16b775;
+$app-landing-showcase-icon2: #f39c12;
+$app-landing-showcase-icon3: #db2314;
+$app-landing-showcase-icon4: #b46aa2;
+$transport-theme-color: $blue3;
+$transport-theme-color2: $deep-blue2;
+$transport-secondary-color: $orange;
+$seo-theme-color: $powder-green2;
+$seo-secondary-color: $yellow-4;
+$facebook-color: #0060d6;
+$twitter-color: #59d5fe;
+$linkedin-color: #0099cb;
+$seo-footer-links-border-color: $powder-green3;
+$hosting-theme-color: $powder-blue2;
+$hosting-domain-input-color: $light-blue3;
+$hosting-domain-select-color: $powder-blue3;
+$hosting-pricing-light-color:  $light-blue3;
+$hosting-footer-blue-color: $deep-blue3;
+$wedding-theme-color: $powder-pink;
+$wedding-secondary-color: $biolet;

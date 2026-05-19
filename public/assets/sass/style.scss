@@ -1,0 +1,222 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name: 	infinity - Multipurpose Business Landing Page
+Version:        1.0.0
+Author:         themexriver
+URL:            http://themeforest.net/user/themexriver
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#0.1  Theme Reset Style
+#0.2  Global Elements
+#0.3  header
+#0.4  hero
+#0.5  footer
+#0.6  featured
+#0.7  about
+#0.8  skills
+#0.9  services
+#1.0  pricing
+#1.1  fun-fact
+#1.2  projects
+#1.3  faq
+#1.4  testimonials
+#1.5  partner
+#1.6  intro
+#1.7  about-s2
+#1.8  services-s2
+#1.9  team
+#2.0  funfact style 2
+#2.1  skills
+#2.2  cta
+#2.3  blog
+#2.4  address
+
+-----------------------------------------------------------------
+>>> home Architecture
+-----------------------------------------------------------------
+#3.0  about-s3
+#3.1  services-s3
+#3.2  projects-architects
+#3.3  team-architects
+#3.4  architects-pricing
+#3.5  architects-blog
+#3.6  architects-testimonials
+
+
+-----------------------------------------------------------------
+>>> home construction
+-----------------------------------------------------------------
+#4.0  construction-services
+#4.1  construction-projects
+#4.2  construction-about
+#4.3  construction-why-choose
+#4.4  construction-team
+#4.5  construction-news-faq
+#4.6  construction-fun-fact
+#4.7  construction-testimonials
+
+
+-----------------------------------------------------------------
+>>> home charity
+-----------------------------------------------------------------
+#5.0  charity-mission
+#5.1  important-causes
+#5.2  charity-fun-fact
+#5.3  charity-about
+#5.4  charity-news
+#5.5  charity-next-event
+#5.6  charity-gallery
+#5.7  charity-testimonials
+
+
+-----------------------------------------------------------------
+>>> home events
+-----------------------------------------------------------------
+#6.0  events-about
+#6.1  event-speakers
+#6.2  event-schedules
+#6.3  event-booking
+#6.4  event-news
+#6.5  event-sponsors
+#6.6  event-location
+#6.7  event-newsletter
+
+
+-----------------------------------------------------------------
+>>> home agency
+-----------------------------------------------------------------
+#7.0  agency-featured
+#7.1  agency-about
+#7.2  agency-services
+#7.3  agency-fun-fact
+#7.4  agency-team
+#7.5  agency-portfolio
+#7.6  agency-testimonials
+#7.7  agency-cta
+#7.8  agency-news
+#7.9  agency-partner
+
+
+-----------------------------------------------------------------
+>>> home app-landing
+-----------------------------------------------------------------
+#8.0  app-landing-features
+#8.1  app-landing-products
+#8.2  app-landing-cta
+#8.3  app-landing-showcase
+#8.4  app-landing-team
+#8.5  app-landing-testimonials
+#8.6  app-landing-pricing
+
+
+-----------------------------------------------------------------
+>>> home transport
+-----------------------------------------------------------------
+#9.0  transport-services
+#9.1  transport-awards
+#9.2  transport-services2
+#9.3  transport-fun-fact
+#9.4  transport-features
+#9.5  transport-faq
+#9.6  transport-testimonials
+#9.7  transport-blog
+#9.8  transport-contact
+
+
+-----------------------------------------------------------------
+>>> home seo
+-----------------------------------------------------------------
+#10.0  seo-about
+#10.1  seo-featured
+#10.2  seo-cta
+#10.3  seo-services
+#10.4  seo-fun-fact
+#10.5  seo-app
+#10.6  seo-team
+#10.7  seo-cta2
+#10.8  seo-projects
+#10.9  seo-packages
+#10.10	seo-blog
+#10.11	seo-testimonials
+#10.12	seo-footer
+
+
+-----------------------------------------------------------------
+>>> home hosting
+-----------------------------------------------------------------
+#11.1  hosting-partner
+#11.2  hosting-domain
+#11.3  hosting-features
+#11.4  hosting-pricing
+#11.5  hosting-cta
+#11.6  hosting-fun-fact
+#11.7  hosting-team
+#11.8  hosting-faq-section
+#11.9  hosting-testimonials
+#11.10  hosting-blog
+#11.11  hosting-location
+#11.12  hosting-footer
+
+
+
+-----------------------------------------------------------------
+>>> home wedding
+-----------------------------------------------------------------
+#12.0  wedding-card
+#12.1  wedding-count-down
+#12.2  wedding-couple
+#12.3  wedding-story
+#12.4  wedding-events
+#12.5  wedding-gallery
+#12.6  wedding-wishes
+#12.7  wedding-rsvp
+#12.8  wedding-gift-registry
+#12.9  wedding-footer
+
+
+
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/sticky-header";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/service-grid";
+@import "components/pricing-grid";
+@import "components/project-grid";
+@import "components/service-s2-grid";
+@import "components/team-grid";
+@import "components/blog-grid";
+@import "components/service-s3-grid";
+@import "components/team-architect";
+@import "components/architects-pricing-grid";
+@import "components/construction-services-grids";
+@import "components/important-causes-grid";
+@import "components/charity-blog-grid";
+@import "components/charity-gallery-grid";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// page
+@import "page/all-page";
+
+

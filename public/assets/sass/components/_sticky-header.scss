@@ -1,0 +1,92 @@
+.site-header nav.sticky {
+	background-color: transparentize($black, 0.1);
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}
+
+.header-style-two nav.sticky {
+	background-color: transparentize($theme-primary-color2, 0.02);
+}
+
+.architect-header nav.sticky {
+	background-color: $white;
+	padding: 20px 0;
+}
+
+.construction-header nav.sticky {
+	background-color: $construction-secondary-color;
+	.navbar-header button {
+		top: 18px;
+	}
+}
+
+.charity-header nav.sticky {
+	background-color: $white;
+	border-bottom: 1px solid lighten($black, 90%);
+	.navbar-header button {
+		top: 16px;
+
+		@include media-query(767px) {
+			top: 12px;
+		}
+	}
+}
+
+.events-header nav.sticky {
+	background-color: transparentize($events-secondary-color, 0.05);
+}
+
+.agency-header nav.sticky {
+	background-color: transparentize(lighten($black, 26.8%), 0.05);
+}
+
+.app-landing-header nav.sticky {
+	background-color: transparentize($app-landing-theme-color, 0.05);
+
+	.navbar-header button {
+		top: 8px;
+	}
+}
+
+.transport-header nav.sticky {
+	background-color: transparentize($transport-theme-color, 0.05);
+}
+
+.seo-header nav.sticky {
+	background-color: $seo-theme-color;
+}
+
+.hosting-header nav.sticky {
+	background-color: $white;
+}
+
+.wedding-header nav.sticky {
+	background-color: $white;
+	#navbar > ul > li > a {
+		color: $black;
+	}
+
+	.navbar-header button {
+		top: 7px;
+	}
+}
+
+.sticky {
+	-webkit-animation: stickyMenuAnimation 0.8s;
+	animation: stickyMenuAnimation 0.8s;
+}
+
+@-webkit-keyframes stickyMenuAnimation {
+	from {
+		-webkit-transform: translateY(-100px);
+		transform: translateY(-100px);
+	}
+
+	to {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}

@@ -1,0 +1,236 @@
+.theme-btn {
+	background-color: $theme-primary-color;
+	font-size: 15px;
+	font-weight: bold;
+	color: $white;
+	padding: 10px 25px;
+	border: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+	@include rounded-border(0);
+	z-index: 1;
+
+	&:before {
+		content: "";
+		background-color: darken($theme-primary-color, 15%);
+		width: 0%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		@include transition-time(0.3s);
+	}
+
+	&:hover:before,
+	&:focus:before,
+	&:active:before {
+		width: 100%;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $white;
+	}
+
+	@include media-query(991px) {
+		padding: 8px 22px;
+		font-size: 14px;
+	}
+
+	@include media-query(767px) {
+		font-size: 13px;
+		font-weight: normal;
+	}
+}
+
+.theme-btn-s2 {
+	@extend .theme-btn;
+
+	background-color: $theme-primary-color2;
+	&:before {
+		content: "";
+		background-color: darken($theme-primary-color2, 5%);
+	}
+}
+
+
+.theme-btn-s3 {
+	@extend .theme-btn;
+
+	background-color: transparent;
+	border: 2px solid $theme-secondary-color;
+	color: $theme-secondary-color;
+
+	&:before {
+		content: "";
+		background-color: $theme-secondary-color;
+	}
+}
+
+.theme-btn-s4 {
+	@extend .theme-btn-s3;
+
+	border: 2px solid $theme-primary-color3;
+	color: $theme-primary-color3;
+
+	&:before {
+		content: "";
+		background-color: $theme-primary-color3;
+	}
+
+	&:hover {
+		color: $white;
+	}
+}
+
+.construction-theme-btn {
+	@extend .theme-btn-s4;
+	border-color: $construction-primary-color;
+	color: $construction-primary-color;
+
+	@include widther(992px) {
+		padding: 8px 25px;
+	}
+
+	&:before {
+		background-color: $construction-primary-color;
+	}
+}
+
+.charity-theme-btn {
+	@extend .construction-theme-btn;
+	background-color: $charity-theme-color;
+	border-color: $charity-theme-color;
+	color: $white;
+
+	&:before {
+		background-color: darken($charity-theme-color, 5%);
+	}
+}
+
+.events-theme-btn-red {
+	@extend .theme-btn;
+	background-color: $events-theme-color;
+	@include rounded-border(5px);
+	text-transform: capitalize;
+	padding: 10px 20px;
+
+	&:before {
+		background-color: $events-secondary-color;
+		@include rounded-border(5px);
+	}
+}
+
+.transport-theme-btn {
+	@extend .theme-btn-s2;
+	background-color: $transport-theme-color;
+
+	&:before {
+		background-color: darken($transport-theme-color, 5%);
+	}
+}
+
+
+.seo-theme-btn {
+	background-color: $seo-secondary-color;
+	height: 45px;
+	line-height: 45px;
+	font-size: 18px;
+	font-weight: bold;
+	color: $white;
+	text-align: center;
+	padding: 0 35px;
+	border: 0;
+	letter-spacing: 1px;
+	position: relative;
+	overflow: hidden;
+	@include transition-time(0.3s);
+	@include rounded-border(0);
+
+	@include media-query(767px) {
+		height: 37px;
+		line-height: 37px;
+		font-size: 15px;
+		padding: 0 30px;
+	}
+
+	&:hover {
+		color: $white;
+		background-color: $seo-theme-color;
+		&:after {
+			left: 100%;
+		}
+	}
+
+	&:after {
+		content: "";
+		background-color: $white;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 70%;
+		top: 0;
+		@include transition-time(0.3s);
+		-webkit-transform: skewY(-35deg);
+		transform: skewY(-35deg);
+	}
+}
+
+.hosting-theme-btn {
+	background-color: transparent;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	color: $hosting-theme-color;
+	padding: 0 35px;
+	border: 1px solid $hosting-theme-color;
+	text-transform: capitalize;
+	overflow: hidden;
+	@include rounded-border(10px);
+	@include transition-time(0.3s);
+
+	@include media-query(991px) {
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+	}
+
+	&:hover {
+		background-color: $hosting-theme-color;
+		color: $white;
+	}
+}
+
+.wedding-btn {
+	background-color: $wedding-theme-color;
+	width: 145px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 17px;
+	color: $white;
+	padding: 0;
+	text-transform: uppercase;
+	@include rounded-border(0);
+
+	&:before {
+		background-color: $wedding-secondary-color;
+	}
+
+	@include media-query(991px) {
+		width: 125px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 15px;
+	}
+
+	@include media-query(767px) {
+		width: 110px;
+		height: 38px;
+		line-height: 38px;
+		font-size: 14px;
+	}
+}

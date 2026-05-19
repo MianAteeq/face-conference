@@ -1,0 +1,432 @@
+/*--------------------------------------------------------------
+#0.5	footer
+--------------------------------------------------------------*/
+footer {
+	background-color: $footer-color;
+	padding: 160px 0 100px;
+
+	@include media-query(991px) {
+		padding: 110px 0 50px;
+	}
+
+	@include media-query(767px) {
+		padding: 110px 0 20px;
+	}
+
+	h3 {
+		font-size: 20px;
+		font-weight: normal;
+		color: $white;
+		margin: 0 0 1.5em;
+		padding-bottom: 0.35em;
+		border-bottom: 1px solid $theme-primary-color;
+		display: inline-block;
+		text-transform: uppercase;
+		position: relative;
+		letter-spacing: 2px;
+
+		@include media-query(767px) {
+			font-size: 16px;
+		}
+	}
+
+	@include media-query(991px) {
+		.container .row > .col {
+			margin-bottom: 50px;
+		}
+	}
+
+	@include media-query(500px) {
+		.container .row > .col {
+			width: 100%;
+		}
+	}
+
+	/*** about widget ***/
+	.about-widget {
+		position: relative;
+
+		p {
+			color: lighten($black, 73.5%);
+		}
+
+		.copyright {
+			color: $theme-primary-color;
+			margin-top: 1.5em;
+		}
+
+		.social-links li {
+			margin-right: 12px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.social-links a {
+			font-size: 18px;
+			color: $white;
+
+			@include media-query(767px) {
+				font-size: 16px;
+			}
+		}
+
+		.social-links a:hover {
+			color: $theme-primary-color;
+		}
+
+		.logo {
+			position: absolute;
+			top: -55px;
+
+			@include media-query(767px) {
+				top: -40px;
+				img {
+					max-width: 75px;
+				}
+			}
+		}
+	}
+
+	/*** recent news widget ***/
+	.recent-news-widget {
+		ul li {
+			overflow: hidden;
+			margin-bottom: 40px;
+			position: relative;
+		}
+
+		ul li:last-child {
+			margin-bottom: 0;
+		}
+
+		.img-holder {
+			width: 20%;
+			float: left;
+			img {
+				max-width: 100%;
+			}
+
+			@include media-query(500px) {
+				width: 100%;
+				float: none;
+				margin-bottom: 12px;
+			}
+		}
+
+		.post-details {
+			width: 75%;
+			float: right;
+
+			@include media-query(500px) {
+				width: 100%;
+				float: none;
+			}
+		}
+
+		h4 {
+			font-size: 15px;
+			font-weight: normal;
+			line-height: 1.4em;
+			margin: 0 0 0.2em;
+
+			@include media-query(767px) {
+				font-size: 14px;
+			}
+
+			a {
+				color: $white;
+			}
+
+			a:hover {
+				color: $theme-primary-color;
+				text-decoration: underline;
+			}
+		}
+
+		.date {
+			display: block;
+			font-size: 14px;
+			color: $theme-primary-color;
+
+			i {
+				display: inline-block;
+				padding-right: 4px;
+
+			}
+		}
+	}
+
+	/*** site map ***/
+	.site-map {
+		ul li {
+			margin-bottom: 10px;
+		}
+
+		ul li:last-child {
+			margin-bottom: 0;
+		}
+
+		ul li a {
+			color: $white;
+		}
+
+		ul li a:hover {
+			color: $theme-primary-color;
+		}
+	}
+
+	/*** newsletter widget ***/
+	.newsletter-widget {
+		.form {
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+
+		.form > div:first-child {
+			width: 60%;
+			float: left;
+		}
+
+		.form > div:last-child {
+			width: 38%;
+			float: right;
+		}
+
+		.form input {
+			background-color: transparent;
+			border-color: $theme-primary-color;
+		}
+
+		.form .btn {
+			background-color: $theme-primary-color;
+			color: $white;
+			text-transform: uppercase;
+			padding: 7px 12px;
+			border: 0;
+			@include rounded-border(0);
+
+			@include media-query(767px) {
+				font-size: 12px;
+				padding: 10px 12px;
+			}
+		}
+
+		.form .btn:hover {
+			background-color: darken($theme-primary-color, 10%);
+		}
+
+		p {
+			font-size: 14px;
+			color: $white;
+		}
+
+		.flickr-photo ul {
+			overflow: hidden;
+			padding-right: 35px;
+			margin: 40px 0 0;
+
+			@include media-query(991px) {
+				padding-right: 0;
+				margin: 20px 0 0;
+			}
+
+			li {
+				width: 20%;
+				float: left;
+			}
+
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+
+	/*** contact widget ***/
+	.contact-widget ul li,
+	.contact-widget ul li > span {
+		color: $white;
+	}
+
+	.contact-widget ul {
+		margin-top: 25px;
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		li:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+
+	/*** instagram widget ***/
+	.instagram-widget ul {
+		overflow: hidden;
+		margin: 0 -7px 0;
+
+		li {
+			float: left;
+			width: 33.33%;
+			padding: 0 7px 15px;
+		}
+	}
+
+	.twitter-post-widget {
+		ul > li {
+			margin-bottom: 30px;
+			@include media-query(991px) {
+				margin-bottom: 20px;
+			}
+		}
+		
+		ul > li:last-child {
+			margin-bottom: 0;
+		}
+		
+		li p {
+			color: $white;
+			margin: 0;
+			line-height: 1.3em;
+		}
+
+		.date {
+			font-size: 14px;
+			color: $white;
+			display: inline-block;
+			margin-top: 5px;
+		}
+	}
+
+}
+
+
+/*** footer style two ***/
+.footer-style-two {
+	padding: 145px 0 100px;
+
+	@include media-query(991px) {
+		padding: 100px 0 30px;
+	}
+
+	@include media-query(767px) {
+		padding: 70px 0 30px;
+	}
+
+	@include media-query(500px) {
+		padding: 70px 0 10px;
+	}
+
+	.about-widget .logo {
+		position: relative;
+		top: -18px;
+		margin-bottom: 7px;
+
+		@include media-query(767px) {
+			top: 3px;
+			margin-bottom: 25px;
+
+			img {
+				max-width: 150px;
+			}
+		}
+	}
+
+	a,
+	p,
+	span,
+	li {
+		color: $footer-style-two-color;
+	}
+
+	.about-widget .copyright,
+	a:hover {
+		color: $white;
+	}
+
+	h3 {
+		border: 0;
+		letter-spacing: 0;
+		text-transform: capitalize;
+	}
+
+
+	@include media-query(991px) {
+		> .container > .row > .col  {
+			min-height: 200px;
+		}
+	}
+
+	@include media-query(767px) {
+		> .container > .row > .col  {
+			min-height: 180px;
+			margin-bottom: 30px;
+		}
+	}
+
+	@include media-query(500px) {
+		> .container > .row > .col  {
+			min-height: auto;
+			margin-bottom: 50px;
+		}
+	}
+}
+
+/*** footer style three ***/
+.footer-style-three {
+	@extend .footer-style-two;
+
+	.contact-widget ul li span {
+		color: lighten($black, 40%);
+	}
+
+	.newsletter-widget .form input {
+		border: 2px solid $app-landing-theme-color;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+	.newsletter-widget .form > div:last-child {
+		width: 40%;
+	}
+
+	.newsletter-widget .form .btn {
+		background-color: $app-landing-theme-color;
+
+		@include media-query(767px) {
+			padding: 0 12px;
+			height: 34px;
+		}
+
+		&:hover {
+			background: darken($app-landing-theme-color, 5%);
+		}
+	}
+
+	.newsletter-widget .social-links {
+		margin-top: 30px;
+
+		@include media-query(767px) {
+			margin-top: 20px;
+		}
+
+		li {
+			margin-right: 15px;
+			@include media-query(991px) {
+				margin-right: 10px;
+			}
+		}
+
+		a {
+			font-size: 20px;
+			color: $white;
+
+			@include media-query(991px) {
+				font-size: 15px;
+			}
+		}
+	}
+}
